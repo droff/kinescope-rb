@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "per_page": 1,
+      "total": 10
+    },
+    "order": {
+      "created_at": "desc",
+      "title": "asc"
+    }
+  },
+  "data": [
+    {
+      "id": "vKSxQyZScoQfP29oothREi",
+      "project_id": "mNFQz2wYTBhLkPBCo9oS8m",
+      "folder_id": null,
+      "version": 0,
+      "title": "sample_video",
+      "description": "",
+      "status": "uploading",
+      "progress": 100,
+      "duration": 0,
+      "assets": [],
+      "chapters": {
+        "items": [],
+        "enabled": false,
+        "show_on_load": false
+      },
+      "privacy_type": "anywhere",
+      "privacy_domains": [],
+      "poster": null,
+      "additional_materials": null,
+      "additional_materials_enabled": false,
+      "play_link": "https://kinescope.io/199511994",
+      "embed_link": "https://kinescope.io/embed/199511994",
+      "created_at": "2020-08-31T09:03:00.106436Z",
+      "updated_at": null,
+      "subtitles": [],
+      "subtitles_enabled": false,
+      "hls_link": "https://kinescope.io/199511994/master.m3u8"
+    }
+  ]
+}
