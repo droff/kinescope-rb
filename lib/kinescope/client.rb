@@ -29,6 +29,7 @@ module Kinescope
     def self.resources
       {
         videos: VideoResource,
+        drm: DRMResource
       }
     end
 
