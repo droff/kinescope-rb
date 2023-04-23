@@ -1,0 +1,9 @@
+{
+  "data": {
+    "url": "https://example.org/auth/kinescope",
+    "username": "testusername",
+    "password": "testpassword",
+    "created_at": "2021-11-10T10:33:43.359069Z",
+    "updated_at": "2021-11-11T10:33:43.359069Z"
+  }
+}
