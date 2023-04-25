@@ -6,25 +6,27 @@ RSpec.describe Kinescope::DRMResource do
   include_context 'client'
   subject(:resource) { described_class.new(connection: connection) }
 
-  describe '#show' do
-    it 'returns drm state' do
-      api_stub('/v1/drm/auth', :get).to_return(body: api_fixture('drm/show'))
+  let(:project_id) { 12345 }
 
-      drm = resource.show
+  describe '#find' do
+    it 'returns drm state for given project' do
+      api_stub("/v1/drm/auth/#{project_id}", :get).to_return(body: api_fixture('drm/find'))
+
+      drm = resource.find(project_id: 12345)
       expect(drm).to be_kind_of(Kinescope::DRM)
     end
   end
 
   describe '#update' do
-    it 'updates drm state' do
-      api_stub('/v1/drm/auth', :put).to_return(body: api_fixture('drm/update'))
+    it 'updates drm state for given project' do
+      api_stub("/v1/drm/auth/#{project_id}", :put).to_return(body: api_fixture('drm/update'))
 
       new_drm = Kinescope::DRM.new(
         url: 'https://example.org/auth/kinescope',
         username: 'testusername',
         password: 'testpassword'
       )
-      drm = resource.update(new_drm)
+      drm = resource.update(new_drm, project_id: 12345)
 
       expect(drm).to be_kind_of(Kinescope::DRM)
       expect(drm.url).to eq(new_drm.url)
@@ -35,8 +37,9 @@ RSpec.describe Kinescope::DRMResource do
 
   describe '#delete' do
     it 'deactivates drm' do
-      api_stub('/v1/drm/auth', :delete).to_return(body: nil)
-      expect(resource.delete).to be_truthy
+      api_stub("/v1/drm/auth/#{project_id}", :delete).to_return(body: nil)
+
+      expect(resource.delete(project_id: project_id)).to be_truthy
     end
   end
 end
