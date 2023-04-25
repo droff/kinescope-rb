@@ -2,7 +2,7 @@
 
 module Kinescope
   class VideoResource < ResourceKit::Resource
-    # include ErrorHandler
+    include ErrorHandler
 
     resources do
       action :all, 'GET /v1/videos' do

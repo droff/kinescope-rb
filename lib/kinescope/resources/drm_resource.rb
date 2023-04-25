@@ -2,6 +2,8 @@
 
 module Kinescope
   class DRMResource < ResourceKit::Resource
+    include ErrorHandler
+
     resources do
       action :find, 'GET /v1/drm/auth/:project_id' do
         handler(200) { |response| DRMMapping.extract_single(response.body, :read) }
