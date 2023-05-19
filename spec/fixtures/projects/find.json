@@ -1,0 +1,28 @@
+{
+  "data": {
+    "id": "12345",
+    "name": "staging",
+    "folders": [
+      {
+        "id": "mNFQz2wYTBhLkPBCo9oS8m",
+        "name": "Example",
+        "project_id": "12345",
+        "parent_id": "123",
+        "size": 105301672,
+        "items_count": 4,
+        "created_at": "2022-03-16T11:45:28.792992Z",
+        "updated_at": null,
+        "deleted_at": null
+      }
+    ],
+    "privacy_type": "anywhere",
+    "privacy_domains": [],
+    "player_id": "1234567890",
+    "favorite": false,
+    "size": 137939273,
+    "items_count": 6,
+    "created_at": "2022-03-16T11:33:16.761884Z",
+    "updated_at": null,
+    "encrypted": false
+  }
+}
