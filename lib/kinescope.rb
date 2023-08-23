@@ -4,6 +4,7 @@ require 'kinescope/version'
 require 'resource_kit'
 require 'kartograph'
 
+# Kinescope
 module Kinescope
   autoload :Client, 'kinescope/client'
 

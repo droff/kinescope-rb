@@ -30,7 +30,7 @@ module Kinescope
       {
         drm: DRMResource,
         projects: ProjectResource,
-        videos: VideoResource,
+        videos: VideoResource
       }
     end
 
