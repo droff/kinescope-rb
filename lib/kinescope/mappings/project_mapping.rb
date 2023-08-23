@@ -9,8 +9,8 @@ module Kinescope
       root_key plural: 'data', singular: 'data', scopes: [:read]
 
       property :id, scopes: [:read]
-      property :name, scopes: [:read]
-      property :privacy_type, scopes: [:read]
+      property :name, scopes: [:read, :update]
+      property :privacy_type, scopes: [:read, :update]
       property :privacy_domains, scopes: [:read]
       property :player_id, scopes: [:read]
       property :favorite, scopes: [:read]
@@ -18,7 +18,7 @@ module Kinescope
       property :items_count, scopes: [:read]
       property :created_at, scopes: [:read]
       property :updated_at, scopes: [:read]
-      property :encrypted, scopes: [:read]
+      property :encrypted, scopes: [:read, :update]
     end
   end
 end
