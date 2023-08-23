@@ -8,6 +8,11 @@ module Kinescope
       action :find, 'GET /v1/projects/:project_id' do
         handler(200) { |response| ProjectMapping.extract_single(response.body, :read) }
       end
+
+      action :update, 'PUT /v1/projects/:project_id' do
+        body { |object| ProjectMapping.representation_for(:update, object) }
+        handler(200) { |response| ProjectMapping.extract_single(response.body, :read) }
+      end
     end
   end
 end

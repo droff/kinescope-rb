@@ -1,0 +1,19 @@
+{
+  "data": {
+    "id": "mNFQz2wYTBhLkPBCo9oS8m",
+    "name": "Project name updated",
+    "encrypted": true,
+    "folders": [
+      {
+        "id": "spuavLLtW44iUmHbL75z2u",
+        "name": "New folder",
+        "project_id": "mNFQz2wYTBhLkPBCo9oS8m",
+        "created_at": "2020-08-31T10:14:28.422193Z",
+        "updated_at": null,
+        "deleted_at": null
+      }
+    ],
+    "created_at": "2020-06-04T21:08:35.432107Z",
+    "updated_at": "2020-08-31T10:15:09.685516Z"
+  }
+}
